@@ -10,12 +10,12 @@ This project demonstrates hands-on expertise in **container orchestration, Helm-
 
 ## 🧩 Tech Stack
 
-**Frontend:** HTML, CSS, JavaScript
-**Containerization:** Docker (Docker Hub)
-**Orchestration:** Kubernetes
-**Deployment:** Helm
-**Ingress:** NGINX Ingress Controller
-**Cloud:** AWS EC2
+* **Frontend:** HTML, CSS, JavaScript
+* **Containerization:** Docker (Docker Hub)
+* **Orchestration:** Kubernetes
+* **Deployment:** Helm
+* **Ingress:** NGINX Ingress Controller
+* **Cloud:** AWS EC2
 
 ---
 
@@ -44,9 +44,39 @@ This project demonstrates hands-on expertise in **container orchestration, Helm-
 
 ---
 
+## 📂 Project Structure
+
+```bash
+.
+├── README.md
+├── dockerfile
+├── helm
+│   ├── cloud-native-todo-app
+│   │   ├── Chart.yaml
+│   │   ├── charts
+│   │   ├── templates
+│   │   │   ├── NOTES.txt
+│   │   │   ├── _helpers.tpl
+│   │   │   ├── deployment.yaml
+│   │   │   ├── hpa.yaml
+│   │   │   ├── httproute.yaml
+│   │   │   ├── ingress.yaml
+│   │   │   ├── service.yaml
+│   │   │   ├── serviceaccount.yaml
+│   │   │   └── tests
+│   │   │       └── test-connection.yaml
+│   │   └── values.yaml
+│   └── cloud-native-todo-app-0.1.0.tgz
+├── index.html
+├── script.js
+└── style.css
+```
+
+---
+
 ## 📈 Key Learnings
 
-* Kubernetes resource management (Deployment, Service, Ingress)
+* Kubernetes resource management (**Deployment, Service, Ingress, HPA**)
 * Helm chart structuring and parameterization
 * Docker image lifecycle and registry usage
 * End-to-end cloud deployment workflow
@@ -55,10 +85,10 @@ This project demonstrates hands-on expertise in **container orchestration, Helm-
 
 ## 🌱 Future Enhancements
 
-* HTTPS with TLS (Ingress SSL)
-* Custom domain mapping
-* CI/CD pipeline integration (GitHub Actions)
-* Backend & database integration
+* 🔐 HTTPS with TLS (Ingress SSL)
+* 🌍 Custom domain mapping
+* ⚙️ CI/CD pipeline integration (GitHub Actions)
+* 🗄️ Backend & database integration
 
 ---
 
@@ -69,4 +99,4 @@ Software Engineer | DevOps & Cloud Enthusiast
 
 ---
 
-⭐ *Open to Cloud / DevOps opportunities | Immediate Joiner*
+⭐ **Open to Cloud / DevOps opportunities | Immediate Joiner**
