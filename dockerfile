@@ -1,5 +1,5 @@
 # Use the Nginx lightweight images as base
-FROM nginx:alpine
+FROM nginx:alpine-slim
 
 # Delete the default nginx websites files
 RUN rm -rf /usr/share/nginx/html/*
