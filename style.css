@@ -76,6 +76,18 @@ li span {
   color: #ff6b6b;
 }
 
+.logout-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #ff4d4d;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
 @keyframes fadeIn {
   from {opacity: 0; transform: translateY(10px);}
   to {opacity: 1; transform: translateY(0);}

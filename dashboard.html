@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Todo App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🔐 Protect Page (redirect if not logged in) -->
+  <script>
+    if (!localStorage.getItem("user")) {
+      window.location.href = "index.html";
+    }
+  </script>
+
+  <!-- 🔴 Logout Button -->
+  <button onclick="logout()" class="logout-btn">Logout</button>
+
+  <div class="container">
+    <h1>💫 My Tasks</h1>
+
+    <!-- 👤 Welcome User -->
+    <p id="welcome"></p>
+
+    <div class="input-box">
+      <input type="text" id="taskInput" placeholder="Add a new task..." />
+      <button onclick="addTask()">Add</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+
+  <!-- 👤 Show Username -->
+  <script>
+    document.getElementById("welcome").innerText =
+      "Welcome, " + localStorage.getItem("user");
+  </script>
+
+</body>
+</html>
