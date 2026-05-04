@@ -87,7 +87,7 @@ pipeline{
         stage("Debug Library") {
             steps {
                 script {
-                    echo "Testing shared library...!"
+                    echo "Testing shared library from VS code after SCM..."
                     hello()
                 }
             }
