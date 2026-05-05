@@ -49,10 +49,10 @@ pipeline{
             }
         }
 
-        stage("Deploy"){
+        stage("Deploy to K8S"){
             steps{
                 script{
-                    deployToDocker()
+                    deployToK8S()
                 }
             }
         } 
