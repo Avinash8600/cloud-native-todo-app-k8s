@@ -17,6 +17,7 @@ pipeline{
             steps{
                 script{
                     buildDockerImage("cloud-native-todo-app", "latest", "avindock")
+                    echo "Docker image built successfully..."
                 }
             }
             
