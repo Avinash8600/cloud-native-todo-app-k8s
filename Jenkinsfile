@@ -16,7 +16,7 @@ pipeline{
         stage("Build Docker Image"){
             steps{
                 script{
-                    buildDockerImage("cloud-native-todo-app", "latest", "avindock")
+                    buildDockerImage("cloud-native-todo-app-cicd", "latest", "avindock")
                     echo "Docker image built successfully"
                 }
             }
