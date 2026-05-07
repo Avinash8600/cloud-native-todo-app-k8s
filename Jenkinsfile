@@ -77,7 +77,6 @@ pipeline{
         always{
 
             sh 'docker image prune -f || true'
-            //cleanWs()
             echo "Cleanup completed successfully 🚀"
         }
     }
