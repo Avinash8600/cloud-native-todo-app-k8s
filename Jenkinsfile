@@ -37,6 +37,7 @@ pipeline{
                 --exit-code 1 \
                 --no-progress \
                 avindock/cloud-native-todo-app-cicd:latest
+                echo "Trivy scanning completed successfully 🚀"
                 '''
             }
         }     
