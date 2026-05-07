@@ -29,6 +29,17 @@ pipeline{
                 }
             }
         }
+        stage("Trivy Scan"){
+            steps{
+                sh '''
+                trivy image \
+                --severity HIGH,CRITICAL \
+                --exit-code 1 \
+                --no-progress \
+                avindock/cloud-native-todo-app-cicd:latest
+                '''
+            }
+        }     
 
         stage("Push Image to DockerHub"){
             steps{
@@ -63,6 +74,7 @@ pipeline{
         always{
 
             sh 'docker image prune -f || true'
+            cleanWs()
             echo "Cleanup completed successfully 🚀"
         }
     }
