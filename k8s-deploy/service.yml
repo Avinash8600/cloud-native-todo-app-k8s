@@ -2,7 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: todo-app-service
-  namespace: todo-ns
+  namespace: todo-
 spec:
   type: NodePort
   selector:
