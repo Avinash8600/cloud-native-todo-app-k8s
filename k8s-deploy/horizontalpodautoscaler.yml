@@ -3,7 +3,7 @@ apiVersion: autoscaling/v2
 
 metadata:
   name: todo-hpa
-  namespace: todo-
+  namespace: todo
 
 spec:
   scaleTargetRef:
