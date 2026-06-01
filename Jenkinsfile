@@ -77,7 +77,7 @@ pipeline{
         always{
 
             sh 'docker image prune -f || true'
-            echo "Cleanup completed successfully 🚀."
+            echo "Cleanup completed successfully 🚀"
         }
     }
     
